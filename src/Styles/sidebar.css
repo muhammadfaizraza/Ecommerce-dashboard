@@ -1,0 +1,46 @@
+.sidebar {
+    height: 100vh;
+    background-color: rgb(10, 1, 27);
+    opacity: 0.9;
+    margin-top: -97px;
+    width: 184px;
+    border-radius: 0px 30px 30px 0px;
+    color: white;
+}
+.sidebarHeader {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 10px;
+cursor: pointer;
+}
+.sidebarHeader h5 {
+  font-weight: 500;
+}
+.sidebarHeader svg {
+  margin: 20px;
+  font-size: 21px;
+}
+.productItem {
+  display: flex;
+
+  margin: 15px 10px;
+cursor: pointer;
+}
+.productItem a h6 {
+    margin: 3px 22px;
+    text-align: center;
+    font-weight: 300;
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+}
+.productItem  h5  {
+    margin: 3px 22px;
+    text-align: center;
+  font-weight: 300;
+  }
+  .productItem a h6 :hover {
+    
+    text-decoration: none;
+}

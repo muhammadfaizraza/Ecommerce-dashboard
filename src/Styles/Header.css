@@ -1,0 +1,16 @@
+.header{
+width: 80vw;
+height: 100px;
+}
+.headerLinks {
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+    width: 80%;
+    margin-left: 430px;
+}
+.headerLinks h6{
+margin: 30px 20px;
+font-size: 16px;
+cursor: pointer;
+}

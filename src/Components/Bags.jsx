@@ -1,11 +1,12 @@
 import React, { Fragment, useState, useEffect } from "react";
-import { fs } from "../Config/Config";
+import { fs ,storage} from "../Config/Config";
 import "../Styles/table.css";
 // import { Pagination } from "@mui/material";
 import { Link } from "react-router-dom";
 import { Fab } from "@mui/material";
 import AddIcon from "@mui/icons-material/Add";
 import DeleteIcon from '@mui/icons-material/Delete';
+
 const Bags = () => {
   const [state, setState] = useState(false);
   const [product, setProduct] = useState([]);
@@ -25,6 +26,10 @@ const Bags = () => {
       }
     }
   };
+  const deleteData = (key)=> {
+    const database = storage;
+    database.ref(key).delete();
+  }
 
   useEffect(() => {
     getProdcts();
@@ -53,7 +58,7 @@ const Bags = () => {
                 <td data-label="Period">
                   <img className="productImg" src={item.url} alt="" />
                 </td>
-                <td data-label="Period"><DeleteIcon/> </td>
+                <td ><DeleteIcon onClick={() => deleteData(item.ID)}/>  </td>
               </tr>
             </tbody>
           ))}{" "}

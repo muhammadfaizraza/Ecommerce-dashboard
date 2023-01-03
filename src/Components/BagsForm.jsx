@@ -67,7 +67,7 @@ const BagsForm = () => {
               })
               .catch((error) =>
                 swal({
-                  icon: Error,
+                  icon: "error",
                   text: error.message,
                   title: "Error!",
                   type: "error",

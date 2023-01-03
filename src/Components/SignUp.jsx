@@ -54,7 +54,7 @@ const SignUp = () => {
             });
             setTimeout(() => {
               setSuccessMsg("");
-              navigate("/login");
+              navigate("/");
             }, 3000);
           })
           .catch((error) =>

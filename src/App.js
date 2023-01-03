@@ -8,13 +8,12 @@ import BagsForm from "./Components/BagsForm";
 import ShoesForm from "./Components/ShoesForm";
 import Login from "./Components/Login";
 import Dashboard from "./Components/Dashboard";
-
+import { useLocation } from 'react-router-dom'
 import { useState } from "react";
-import { useLocation } from "react-router-dom";
 import SignUp from "./Components/SignUp";
 function App() {
   const [condition, setCondition] = useState(false);
-
+  
   return (
     <div className="App">
       <Router>
@@ -22,6 +21,7 @@ function App() {
         <div className="align">
           <Sidebar />
           <Routes>
+
             <Route path="/" element={<Login />} />
             <Route path="/bags" element={<Bags />} />
             <Route path="/shoes" element={<Shoes />} />
